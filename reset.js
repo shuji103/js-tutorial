@@ -1,9 +1,12 @@
 // リセット機能
 
 (() => {
+    // 要素の取得
     const $counter = document.getElementById("js-counter");
+    // 文字列を表示するための要素を取得
     const $message = document.getElementById("js-message");
 
+    // 関数の定義
     const clickHandler = () => {
         // カウント部分の初期化
         $counter.textContent = 0;
@@ -17,6 +20,6 @@
             $buttons[index].disabled = false;
         }
     }
-
+    // 実行部分
     document.getElementById("js-reset-button").addEventListener("click", clickHandler)
 })();
