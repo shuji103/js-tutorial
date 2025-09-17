@@ -1,3 +1,5 @@
+// ボクシングのカウンター機能
+
 (() => {
 // 要素の取得
 const $counter = document.getElementById("js-counter");
@@ -6,7 +8,7 @@ const $message = document.getElementById("js-message");
 
 // 関数の定義
 const clickHandler = () => {
-    // カウントが1から9のときはStand up!という文字列を表示し、カウントが10に達するとYou were knocked out!という文字列を表示し、カウント10を保持したまま停止
+    // カウントが1から9のときはStand up!という文字列を表示、カウントが10に達するとYou were knocked out!という文字列を表示する。そして、カウント10を保持したままカウントボタンを停止
     const count = parseInt($counter.textContent);
     if (count > 0 && count <= 9) {
         $message.textContent = "Stand up!";
