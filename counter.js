@@ -7,9 +7,11 @@
 
         const $targetButton = e.currentTarget;
         let currentCount = parseInt($counter.textContent);
-
+        // +2ボタンが押されたら2を足す条件を追加
         if($targetButton.textContent === "+"){
             $counter.textContent = currentCount + 1;
+        } else if($targetButton.textContent === "+2"){
+            $counter.textContent = currentCount + 2;
         } else {
             $counter.textContent = currentCount - 1;
         }

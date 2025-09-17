@@ -1,7 +1,6 @@
 // リセット機能
 
 (() => {
-    // ボタン要素js-reset-buttonがクリックされたら、カウンターのテキストの値を0にする処理を行っている
     const $counter = document.getElementById("js-counter");
 
     const clickHandler = () => {
