@@ -1,3 +1,5 @@
+// カウンター機能
+
 (() => {
     // 要素の取得
     const $counter = document.getElementById("js-counter");
