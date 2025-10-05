@@ -10,10 +10,12 @@ const $message = document.getElementById("js-message");
 const clickHandler = () => {
     // カウントが1から9のときはStand up!という文字列を表示、カウントが10に達するとYou were knocked out!という文字列を表示する。そして、カウント10を保持したままカウントボタンを停止
     const count = parseInt($counter.textContent);
+
     if (count > 0 && count <= 9) {
         $message.textContent = "Stand up!";
     } else if (count === 10) {
         $message.textContent = "You were knocked out!";
+
         // カウント10を保持し、以降のボタン操作を無効化（resetボタン以外）
         const $buttons = document.getElementsByClassName("js-button");
         for (let index = 0; index < $buttons.length; index++) {
